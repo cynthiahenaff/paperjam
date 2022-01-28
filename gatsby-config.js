@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 const path = require(`path`);
 
 module.exports = {
@@ -9,7 +13,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-datocms',
       options: {
-        apiToken: '708de6ac72637de5bdfeba07eb3d70',
+        apiToken: process.env.GATSBY_DATO_CMS_API_TOKEN,
       },
     },
     'gatsby-plugin-postcss',
