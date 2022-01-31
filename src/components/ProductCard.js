@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'gatsby-image';
-import { Link } from 'gatsby';
 
 const ProductCard = ({ product }) => (
   <div class="card card-bordered bg-white">
@@ -14,13 +13,19 @@ const ProductCard = ({ product }) => (
       </h3>
       {/* <p>{product?.description}</p> */}
       <div class="justify-end card-actions">
-        <Link
-          role="button"
-          to={`/products/${product?.slug}`}
-          class="btn btn-secondary btn-sm"
+        <button
+          class="btn btn-secondary btn-sm snipcart-add-item"
+          data-item-id={product?.slug}
+          data-item-price={product?.price}
+          data-item-url={`/products/${product?.slug}`}
+          data-item-description={product?.description}
+          data-item-custom1-name="Gift"
+          data-item-custom1-type="checkbox"
+          // data-item-image="/assets/images/starry-night.jpg"
+          data-item-name={product?.name}
         >
-          Buy this book
-        </Link>
+          Add to cart
+        </button>
       </div>
     </div>
   </div>

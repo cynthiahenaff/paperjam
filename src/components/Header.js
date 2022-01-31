@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { IcCart } from 'components/Icons';
 
 const Header = () => {
   return (
@@ -15,6 +16,15 @@ const Header = () => {
           <a class="btn btn-ghost btn-sm rounded-btn">Products</a>
         </div>
       </div>
+      <span class=" px-2 mx-2">
+        <button class="snipcart-checkout">
+          <span class="flex gap-1">
+            <IcCart />
+            <span class="snipcart-total-price"></span>
+            {/* <span class="snipcart-items-count"></span> */}
+          </span>
+        </button>
+      </span>
     </div>
   );
 };

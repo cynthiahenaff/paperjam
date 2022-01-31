@@ -6,13 +6,13 @@ const Footer = () => {
     <footer class="p-10 footer bg-base-200 text-base-content footer-center">
       <div class="grid grid-flow-col gap-4">
         {/* <a class="link link-hover">Product</a> */}
-        <a
+        {/* <a
           class="link link-hover"
           href="https://cynthiahenaff.com"
           target="_blank"
         >
           About me
-        </a>
+        </a> */}
       </div>
       <div>
         <div class="grid grid-flow-col gap-4">

@@ -21,6 +21,7 @@ export const query = graphql`
       slug
       name
       description
+      price
       thumbnail {
         fluid(maxWidth: 300) {
           ...GatsbyDatoCmsFluid_tracedSVG
