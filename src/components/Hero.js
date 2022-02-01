@@ -1,21 +1,22 @@
 import React from 'react';
-import Image from 'gatsby-image';
+import books from 'images/books.png';
+import { Link } from 'gatsby';
 
 const Hero = () => (
-  <div class="hero py-64 bg-gradient-to-br from-primary to-secondary text-primary-content">
+  <div class="hero py-24 bg-gradient-to-br from-primary to-secondary ">
     <div class="flex-col hero-content lg:flex-row-reverse">
-      <Image
-        source="https://picsum.photos/id/1005/600/600"
-        // class="max-w-sm rounded-lg shadow-2xl"
-      />
-      <div>
-        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+      <div class="flex-1">
+        <img src={books} style={{ maxWidth: 400 }} />
+      </div>
+
+      <div class="flex-1">
+        <h1 class="mb-5 text-7xl font-bold">PaperJam</h1>
         <p class="mb-5">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-          excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-          id nisi.
+          The site specialising in graphic novels about the history of music
         </p>
-        <button class="btn btn-primary">Get Started</button>
+        <Link class="btn btn-primary" to="/products">
+          See products
+        </Link>
       </div>
     </div>
   </div>

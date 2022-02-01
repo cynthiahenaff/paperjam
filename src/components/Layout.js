@@ -7,7 +7,7 @@ import { SNIPCART_APIKEY } from 'constants';
 const Layout = ({ children }) => {
   return (
     <div data-theme="cupcake" class="flex flex-col h-screen bg-base-100">
-      <Helmet title="Jam" defer={false}>
+      <Helmet title="PaperJam" defer={false}>
         {/* <!-- Snipcart stylesheet --> */}
         <link
           rel="stylesheet"

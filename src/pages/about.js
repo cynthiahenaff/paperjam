@@ -4,7 +4,9 @@ import Layout from 'components/Layout';
 const AboutPage = () => {
   return (
     <Layout>
-      <h1>Ma page "À propos"</h1>
+      <div class="container mx-auto max-w-[80rem] py-24">
+        <h1>Ma page "À propos"</h1>
+      </div>
     </Layout>
   );
 };

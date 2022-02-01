@@ -6,7 +6,7 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `Poc e-commerce`,
+    title: `PaperJam`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
