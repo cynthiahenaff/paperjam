@@ -8,6 +8,8 @@ const Layout = ({ children }) => {
   return (
     <div data-theme="cupcake" class="flex flex-col h-screen bg-base-100">
       <Helmet title="PaperJam" defer={false}>
+        <link rel="preconnect" href="https://app.snipcart.com" />
+        <link rel="preconnect" href="https://cdn.snipcart.com" />
         {/* <!-- Snipcart stylesheet --> */}
         <link
           rel="stylesheet"
