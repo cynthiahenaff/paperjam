@@ -6,7 +6,6 @@ import { graphql, Link } from 'gatsby';
 
 const IndexPage = ({ data }) => {
   const products = data?.allDatoCmsProduct?.edges ?? [];
-  console.log(data);
   return (
     <Layout>
       <Hero />
@@ -18,8 +17,8 @@ const IndexPage = ({ data }) => {
             <ProductCard product={node} key={node?.index} />
           ))}
         </div>
-        <div class="py-6">
-          <Link to="/products" class="btn btn-primary">
+        <div class="py-8 flex justify-center	">
+          <Link to="/products" class="btn btn-neutral">
             See all products
           </Link>
         </div>
@@ -30,7 +29,10 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query getProducts {
-    allDatoCmsProduct(limit: 3) {
+    allDatoCmsProduct(
+      limit: 3
+      sort: { order: DESC, fields: meta___publishedAt }
+    ) {
       edges {
         node {
           id
@@ -38,7 +40,9 @@ export const query = graphql`
           name
           description
           price
+          newProduct
           thumbnail {
+            url
             fluid(maxWidth: 300) {
               ...GatsbyDatoCmsFluid_tracedSVG
             }

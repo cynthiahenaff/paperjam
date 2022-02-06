@@ -14,7 +14,7 @@ const Hero = () => (
         <p class="mb-5">
           The site specialising in graphic novels about the history of music
         </p>
-        <Link class="btn btn-primary" to="/products">
+        <Link class="btn btn-neutral" to="/products">
           See products
         </Link>
       </div>

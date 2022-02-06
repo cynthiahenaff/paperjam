@@ -3,7 +3,6 @@ import Layout from 'components/Layout';
 import { graphql } from 'gatsby';
 
 const Product = ({ data }) => {
-  console.log(data);
   const product = data?.datoCmsProduct;
   return (
     <Layout>
