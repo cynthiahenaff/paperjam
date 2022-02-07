@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { Helmet } from 'react-helmet';
-import { SNIPCART_APIKEY } from 'constants';
+import { SNIPCART_APIKEY } from '../constants';
 
 const Layout = ({ children }) => {
   return (
