@@ -57,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-plausible`,
       options: {
-        domain: `paperjam.vercel.app`,
+        domain: process.env.GATSBY_PLAUSIBLE_DOMAIN,
       },
     },
   ],
