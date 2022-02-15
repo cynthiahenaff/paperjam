@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Gooddog";
+  src: url("../fonts/gooddog-plain.regular.woff2");
+}
+
+.gooddog {
+  font-family: Gooddog;
+}

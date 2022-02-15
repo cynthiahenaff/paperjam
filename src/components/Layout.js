@@ -4,10 +4,26 @@ import Footer from './Footer';
 import { Helmet } from 'react-helmet';
 import { SNIPCART_APIKEY } from '../constants';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title, description, image }) => {
   return (
-    <div data-theme="cupcake" class="flex flex-col h-screen bg-base-100">
-      <Helmet title="PaperJam" defer={false}>
+    <div data-theme="cupcake" class="flex flex-col min-h-screen bg-base-100">
+      <Helmet
+        title="PaperJam"
+        defer={false}
+        htmlAttributes={{
+          lang: 'en',
+        }}
+      >
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:creator" content="@monsieur_riz" />
+
         <link rel="preconnect" href="https://app.snipcart.com" />
         <link rel="preconnect" href="https://cdn.snipcart.com" />
         {/* <!-- Snipcart stylesheet --> */}
@@ -31,13 +47,9 @@ const Layout = ({ children }) => {
         // data-config-add-product-behavior="none"
         data-config-modal-style="side"
         data-currency="eur"
-      >
-        {/* <button-primary>
-          <button class="snipcart-button-primary btn btn-primary"></button>
-        </button-primary> */}
-      </div>
+      ></div>
 
-      <div class="content">
+      <div class="content min-h-screen flex flex-col">
         <Header />
         <main class="flex-1 bg-base-100 text-base-content">{children}</main>
         <Footer />
