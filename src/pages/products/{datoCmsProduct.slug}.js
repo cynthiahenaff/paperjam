@@ -7,7 +7,7 @@ const Product = ({ data }) => {
 
   return (
     <Layout>
-      <div class="container mx-auto max-w-[65rem] py-24 text-left">
+      <div class="container mx-auto max-w-[65rem] py-24 text-left px-8">
         <div class="grid md:grid-cols-2 gap-16">
           <div class="w-full carousel">
             {(product?.gallery ?? []).map(({ alt, url }, index) => {
