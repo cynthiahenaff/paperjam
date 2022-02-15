@@ -44,5 +44,11 @@ module.exports = {
       },
       __key: 'pages',
     },
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `paperjam.vercel.app`,
+      },
+    },
   ],
 };

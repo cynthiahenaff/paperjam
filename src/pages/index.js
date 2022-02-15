@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
       <Hero />
 
       <div class="container mx-auto max-w-[80rem] py-24 px-8">
-        <h2 class="text-5xl py-8">Last products</h2>
+        <h2 class="text-5xl gooddog py-8">Last products</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map(({ node }) => (
             <ProductCard product={node} key={node?.index} />
