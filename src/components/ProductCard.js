@@ -7,8 +7,8 @@ const ProductCard = ({ product }) => (
     <figure>
       <Image fluid={product?.thumbnail?.fluid} />
     </figure>
-    <div class="card-body p-4">
-      <h3 class="card-title">
+    <div class="card-body p-4 flex flex-col">
+      <h3 class="card-title flex-1">
         {product?.name}
         {product?.newProduct && <div class="badge mx-2 badge-accent">NEW</div>}
       </h3>
