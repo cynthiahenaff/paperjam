@@ -7,7 +7,7 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: `PaperJam`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://paperjam.vercel.app`,
   },
   plugins: [
     {
@@ -43,6 +43,16 @@ module.exports = {
         path: './src/pages/',
       },
       __key: 'pages',
+    },
+    {
+      resolve: `gatsby-plugin-snipcart-advanced`,
+      options: {
+        publicApiKey: process.env.GATSBY_SNIPCART_APIKEY,
+        currency: 'eur',
+        openCartOnAdd: false,
+        useSideCart: true,
+        // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
+      },
     },
     {
       resolve: `gatsby-plugin-plausible`,

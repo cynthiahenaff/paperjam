@@ -5684,6 +5684,13 @@ gatsby-plugin-sitemap@^5.6.0:
     minimatch "^3.0.4"
     sitemap "^7.0.0"
 
+gatsby-plugin-snipcart-advanced@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-snipcart-advanced/-/gatsby-plugin-snipcart-advanced-1.0.3.tgz#ac886c7ff5350f891ca992179f50d27b2afd19d8"
+  integrity sha512-jlfMm6FN8dJU+EHDWyj4qBG7DldKjypE9KeDX9c4m5g+vPJD4t/Ri/WUGlabqGY4chklWFOtDkZ5ChLr/iVFHQ==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+
 gatsby-plugin-typescript@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-4.6.0.tgz#bc01ea2990bd6504d9a88042c1a22911d57520f3"

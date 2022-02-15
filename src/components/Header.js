@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import { IcBag } from 'components/Icons';
 import logo from 'images/logo-white.svg';
+import { SnipcartContext } from 'gatsby-plugin-snipcart-advanced/context';
 
 const Header = () => {
+  const { state } = useContext(SnipcartContext);
+
   return (
     <div class="navbar shadow-lg bg-neutral text-neutral-content rounded-box rounded-none">
       <div class="flex-none px-2 mx-2">
@@ -25,8 +28,7 @@ const Header = () => {
         <button class="snipcart-checkout">
           <span class="flex gap-1">
             <IcBag />
-            <span class="snipcart-total-price"></span>
-            {/* <span class="snipcart-items-count"></span> */}
+            <span>{state?.cartTotal}€</span>
           </span>
         </button>
       </span>

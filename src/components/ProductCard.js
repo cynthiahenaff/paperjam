@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'gatsby-image';
 import { Link } from 'gatsby';
+import { IcAddToCart } from 'components/Icons';
 
 const ProductCard = ({ product }) => (
   <div class="card card-bordered bg-white">
@@ -8,13 +9,22 @@ const ProductCard = ({ product }) => (
       <Image fluid={product?.thumbnail?.fluid} />
     </figure>
     <div class="card-body p-4 flex flex-col">
-      <h3 class="card-title flex-1">
-        {product?.name}
+      <h3 class="card-title flex-1">{product?.name}</h3>
+      <div class="flex items-center">
+        <p class="text-2xl">{product.price}€</p>
         {product?.newProduct && <div class="badge mx-2 badge-accent">NEW</div>}
-      </h3>
+      </div>
+
       <div class="justify-end card-actions">
+        <Link
+          to={`/products/${product.slug}/#picture1`}
+          class="btn btn-outline btn-secondary btn-sm"
+        >
+          See more
+        </Link>
+
         <button
-          class="btn btn-secondary btn-sm snipcart-add-item"
+          class="btn btn-secondary btn-circle btn-sm snipcart-add-item"
           data-item-id={product?.slug}
           data-item-price={product?.price}
           data-item-url={`/products/${product?.slug}`}
@@ -24,26 +34,8 @@ const ProductCard = ({ product }) => (
           data-item-image={product?.thumbnail?.url}
           data-item-name={product?.name}
         >
-          Add to cart
+          <IcAddToCart />
         </button>
-        <Link
-          to={`/products/${product.slug}/#picture1`}
-          class="btn btn-outline btn-circle btn-secondary btn-sm"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            class="inline-block w-6 h-6 stroke-current"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            ></path>
-          </svg>
-        </Link>
       </div>
     </div>
   </div>

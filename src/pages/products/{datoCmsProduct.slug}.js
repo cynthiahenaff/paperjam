@@ -41,8 +41,16 @@ const Product = ({ data }) => {
               );
             })}
           </div>
+
           <div>
             <h1 class="text-6xl gooddog mb-8">{product?.name}</h1>
+            <div class="flex items-center mb-8">
+              <p class="text-4xl">{product.price}€</p>
+              {product?.newProduct && (
+                <div class="badge mx-2 badge-accent">NEW</div>
+              )}
+            </div>
+
             <p>{product?.description}</p>
             <div class="flex justify-end mt-8">
               <button
@@ -74,6 +82,7 @@ export const query = graphql`
       name
       description
       price
+      newProduct
       thumbnail {
         fluid(maxWidth: 300) {
           ...GatsbyDatoCmsFluid_tracedSVG
