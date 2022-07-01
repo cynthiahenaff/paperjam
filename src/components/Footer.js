@@ -1,5 +1,5 @@
 import React from 'react';
-import { IcWeb, IcTwitter } from 'components/Icons';
+import { IcWeb, IcTwitter, IcGithub } from 'components/Icons';
 
 const Footer = () => {
   return (
@@ -21,6 +21,9 @@ const Footer = () => {
           </a>
           <a href="https://twitter.com/monsieur_riz" target="_blank">
             <IcTwitter />
+          </a>
+          <a href="https://github.com/cynthiahenaff" target="_blank">
+            <IcGithub />
           </a>
         </div>
       </div>
