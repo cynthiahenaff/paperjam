@@ -15,8 +15,9 @@ const AboutPage = () => {
               rel="noopener noreferrer"
               class="link link-hover"
             >
-              front-end developer based in Bordeaux.
+              frontend developer based in Bordeaux
             </a>
+            .
           </p>
           <p>
             This site is not a real e-commerce site. I developed it to
