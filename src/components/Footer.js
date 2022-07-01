@@ -16,7 +16,7 @@ const Footer = () => {
       </div>
       <div>
         <div class="grid grid-flow-col gap-4">
-          <a href="https://cynthiahenaff.com" target="_blank">
+          <a href="https://cynthiahenaff.com?source=paperjam" target="_blank">
             <IcWeb />
           </a>
           <a href="https://twitter.com/monsieur_riz" target="_blank">
@@ -32,7 +32,7 @@ const Footer = () => {
           Copyright © {new Date().getFullYear()} - Cynthia Henaff -{' '}
           <a
             class="link link-hover"
-            href="https://cynthiahenaff.com"
+            href="https://cynthiahenaff.com?source=paperjam"
             target="_blank"
           >
             Frontend Developer
