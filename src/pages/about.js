@@ -10,7 +10,7 @@ const AboutPage = () => {
           <p>
             My name is Cynthia and I am a{' '}
             <a
-              href="http://cynthiahenaff.com?source=paperjam"
+              href="http://cynthiahenaff.com/?utm_source=Paperjam"
               target="_blank"
               rel="noopener noreferrer"
               class="link link-hover"
