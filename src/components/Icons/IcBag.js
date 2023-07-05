@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const IcBag = ({ color = '#fff', size = 24, ...props }) => (
+const IcBag = ({ color = '#000', size = 24, ...props }) => (
   <svg
     viewBox="0 0 48 48"
     xmlns="http://www.w3.org/2000/svg"

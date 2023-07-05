@@ -54,7 +54,7 @@ const Product = ({ data }) => {
             <p>{product?.description}</p>
             <div class="flex justify-end mt-8">
               <button
-                class="btn btn-secondary snipcart-add-item"
+                class="btn btn-primary snipcart-add-item"
                 data-item-id={product?.slug}
                 data-item-price={product?.price}
                 data-item-url={`/products/${product?.slug}`}

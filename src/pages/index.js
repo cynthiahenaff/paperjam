@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
           ))}
         </div>
         <div class="py-8 flex justify-center">
-          <Link to="/products" class="btn btn-neutral">
+          <Link to="/products" class="btn btn-primary">
             See all products
           </Link>
         </div>
@@ -29,10 +29,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query getHomepageProducts {
-    allDatoCmsProduct(
-      limit: 3
-      sort: { order: DESC, fields: meta___publishedAt }
-    ) {
+    allDatoCmsProduct(limit: 3, sort: { meta: { publishedAt: DESC } }) {
       edges {
         node {
           id
@@ -42,10 +39,7 @@ export const query = graphql`
           price
           newProduct
           thumbnail {
-            url
-            fluid(maxWidth: 300) {
-              ...GatsbyDatoCmsFluid_tracedSVG
-            }
+            gatsbyImageData(width: 300, placeholder: TRACED_SVG)
           }
         }
       }

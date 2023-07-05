@@ -15,12 +15,12 @@ const AboutPage = () => {
             minds and souls of music lovers.
           </p>
           <p>
-            I'm Cynthia, a
+            I'm Cynthia, a{' '}
             <a
               href="http://cynthiahenaff.com/?utm_source=Paperjam"
               target="_blank"
               rel="noopener noreferrer"
-              class="link link-hover"
+              class="link link-neutral"
             >
               passionate developer based in Bordeaux
             </a>
@@ -36,7 +36,7 @@ const AboutPage = () => {
               href="https://cynthiahenaff.com/writing/create-your-ecommerce-site-with-gatsby/?utm_source=Paperjam"
               target="_blank"
               rel="noopener noreferrer"
-              class="link link-hover"
+              class="link link-neutral"
             >
               my website
             </a>{' '}
@@ -45,7 +45,7 @@ const AboutPage = () => {
               href="https://www.programmez.com/magazine/article/creer-son-site-e-commerce-avec-gatsby-jamstack"
               target="_blank"
               rel="noopener noreferrer"
-              class="link link-hover"
+              class="link link-neutral"
             >
               Programmez.com
             </a>
@@ -66,7 +66,7 @@ const AboutPage = () => {
               href="https://github.com/cynthiahenaff/paperjam"
               target="_blank"
               rel="noopener noreferrer"
-              class="link link-hover"
+              class="link link-neutral"
             >
               Github
             </a>
@@ -84,7 +84,10 @@ const AboutPage = () => {
           </p>
 
           <div class="flex justify-center">
-            <img src="https://www.datocms-assets.com/62198/1656670086-couv-253.jpeg" />
+            <img
+              src="https://www.datocms-assets.com/62198/1656670086-couv-253.jpeg"
+              alt="Programmez magazine's Cover "
+            />
           </div>
         </div>
       </div>

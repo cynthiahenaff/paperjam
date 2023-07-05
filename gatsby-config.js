@@ -16,6 +16,7 @@ module.exports = {
         apiToken: process.env.GATSBY_DATO_CMS_API_TOKEN,
       },
     },
+    `gatsby-plugin-image`,
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
@@ -51,7 +52,6 @@ module.exports = {
         currency: 'eur',
         openCartOnAdd: false,
         useSideCart: true,
-        // be careful with this mode cart. The cart in this mode has a bug of scroll in firefox
       },
     },
     {

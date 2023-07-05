@@ -22,7 +22,7 @@ const ProductsPage = ({ data }) => {
 
 export const query = graphql`
   query getProducts {
-    allDatoCmsProduct(sort: { order: DESC, fields: meta___publishedAt }) {
+    allDatoCmsProduct(sort: { meta: { publishedAt: DESC } }) {
       edges {
         node {
           id
@@ -32,10 +32,7 @@ export const query = graphql`
           price
           newProduct
           thumbnail {
-            url
-            fluid(maxWidth: 300) {
-              ...GatsbyDatoCmsFluid_tracedSVG
-            }
+            gatsbyImageData(width: 300, placeholder: TRACED_SVG)
           }
         }
       }
