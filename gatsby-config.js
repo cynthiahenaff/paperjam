@@ -7,7 +7,7 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: `PaperJam`,
-    siteUrl: `https://paperjam.vercel.app`,
+    siteUrl: `https://paperjam.henaff.io`,
   },
   plugins: [
     {

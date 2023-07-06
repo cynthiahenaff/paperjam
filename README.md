@@ -7,7 +7,7 @@
 # PaperJam
 
 PaperJam is demo of an e-commerce site developed with Jamstack.  It is developed with Gatsby, DatoCMS and Snipcart. 
-Visit the demo site [here](https://paperjam.henaff.io?source=github)
+Visit the demo site [here](https://paperjam.henaff.io?utm_source=github)
 
 ## 🌱 Prerequisites
 

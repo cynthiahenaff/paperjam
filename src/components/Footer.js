@@ -22,7 +22,7 @@ const Footer = () => {
             Cynthia Henaff -{' '}
             <a
               class="link link-hover"
-              href="https://cynthiahenaff.com?source=paperjam"
+              href="https://cynthiahenaff.com?utm_source=paperjam"
               target="_blank"
               rel="noreferrer"
             >
@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a
-          href="https://cynthiahenaff.com?source=paperjam"
+          href="https://cynthiahenaff.com?source=utm_paperjam"
           target="_blank"
           rel="noreferrer"
         >

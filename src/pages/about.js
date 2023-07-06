@@ -17,7 +17,7 @@ const AboutPage = () => {
           <p>
             I'm Cynthia, a{' '}
             <a
-              href="http://cynthiahenaff.com/?utm_source=Paperjam"
+              href="http://cynthiahenaff.com/?utm_source=paperjam"
               target="_blank"
               rel="noopener noreferrer"
               class="link link-neutral"
@@ -33,7 +33,7 @@ const AboutPage = () => {
             process of creating your own e-commerce site using Gatsby, a
             powerful technology based on the Jamstack. You can find it on{' '}
             <a
-              href="https://cynthiahenaff.com/writing/create-your-ecommerce-site-with-gatsby/?utm_source=Paperjam"
+              href="https://cynthiahenaff.com/writing/create-your-ecommerce-site-with-gatsby/?utm_source=paperjam"
               target="_blank"
               rel="noopener noreferrer"
               class="link link-neutral"
